@@ -1,18 +1,34 @@
 //import stuff here!
 
 //Your code here
-class Program6{
+import java.util.Scanner;
+
+ class Program6 {
+
     public static void main(String[] args) {
-     double circumference = 22.272;
-     double radius = 3.712;
-     double diameter = 7.424;
-     double area = 41.337;
-    
-//Output values
-     System.out.println( "Mushroom Cup Prix Racer Average Miles/Per Gallon");
-     System.out.println( "Royale averaged " + royaleMPG  +" m/g");
-     System.out.println( "Koopa King averaged " + koopaMPG +" m/g");
-     System.out.println( "Pipe Frame averaged " + frameMPG +" m/g");
-     System.out.println( "BadWagon averaged " + BadwagonMPG +" m/g");
+        // Create a Scanner object to get user input
+        Scanner scanner = new Scanner(System.in);
+
+        // Constant value for Pi
+        final double PI = 3.14159;
+
+        // Prompt the user to enter the radius
+        System.out.print("Enter the radius of the circle: ");
+        double radius = scanner.nextDouble();
+
+        // Calculate the diameter
+        double diameter = 2 * radius;
+
+        // Calculate the circumference
+        double circumference = 2 * PI * radius;
+
+        // Calculate the area
+        double area = PI * radius * radius;
+
+        // Print the results, formatted to three decimal places
+        System.out.printf("Radius: %.3f\n", radius);
+        System.out.printf("Diameter: %.3f\n", diameter);
+        System.out.printf("Circumference: %.3f\n", circumference);
+        System.out.printf("Area: %.3f\n", area);
     }
-*/
+}
